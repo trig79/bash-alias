@@ -1,0 +1,1 @@
+Some useful bash shortcuts for Laravel and Git that I use on a dat to day basis.
