@@ -1,10 +1,14 @@
-alias log="tail -f storage/logs/laravel.log"
+# Git
 alias master="git checkout master && git fetch --prune && git pull" # prune will update vscode source control
 alias dev="git checkout dev && git fetch --prune && git pull"
 alias git_clean="git branch --merged | grep -E -v \"(master|dev)\" | xargs git branch -d" #removes all merged branches from local
-alias pa="php artisan"
 
 function merge() { git merge "$@" --no-commit --no-ff; }
+
+# Laravel
+alias pa="php artisan"
+alias log="tail -f storage/logs/laravel.log"
+alias node-fix="export NODE_OPTIONS=--openssl-legacy-provider" # Fixes Node v17+ issue with webpack
 
 function seed() { if [ -z ${@} ];
 		 then
