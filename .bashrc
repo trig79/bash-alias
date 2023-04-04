@@ -31,6 +31,6 @@ function migrate() { if [ -z ${@} ];
                  }
 
 # General
-alias www="cd ~/c && cd wamp64/www" # quickly navigate to webapp folder
+alias www="cd /c/wamp64/www" # quickly navigate to webapp folder
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
